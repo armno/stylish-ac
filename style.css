@@ -257,6 +257,14 @@ div.object_comments .comment_form_buttons_wrapper {
   background: #f2f8f8 !important;
 }
 
+div.object_comments .comment .avatar {
+  border-radius: 0;
+}
+
+ul.attachments_table .filename {
+  font-size: 11px; 
+}
+
 /* buttons */
 button.default, submit.default {
   background: yellowgreen;
@@ -299,4 +307,12 @@ div.syntax_higlighted div.syntax_higlighted_source {
 
 .object_wrapper .object_body .object_content_wrapper .object_body_content .syntax_higlighted.source-code pre {
   padding: 20px;
+}
+
+div.objects_list_wrapper div.objects_list div.objects_list_body div.object_list_group div.object_list_group_head {
+  font-size: 14px;
+}
+
+div.objects_list_wrapper div.objects_list div.objects_list_body tr td {
+  padding: 10px 10px !important;
 }
