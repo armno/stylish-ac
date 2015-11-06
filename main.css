@@ -27,7 +27,7 @@ body {
 }
 
 .object_inspector .head {
-  background-image: none; 
+  background-image: none;
 }
 
 #wireframe_page_title h1 {
@@ -51,11 +51,11 @@ body {
 }
 
 .wireframe_content_wrapper.first {
- 	max-width: none;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 60px;
-  background-color: #f2f8f8;
+	max-width: none;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 60px;
+	background-color: #f2f8f8;
 }
 
 .wireframe_content_wrapper.first .head {
@@ -80,7 +80,7 @@ body {
   height: 39px;
 }
 
-#wireframe_page_title #page_title_actions .title_action a.title_action_button, 
+#wireframe_page_title #page_title_actions .title_action a.title_action_button,
 #wireframe_page_title #page_title_actions .title_action span.title_action_button {
   font-size: 14px;
   background-image: none !important;
@@ -133,7 +133,7 @@ div.object_comments .comment .options span {
   color: #dfdfdf;
 }
 
-div.object_subtasks table.subtasks_table td.task_meta a.label, 
+div.object_subtasks table.subtasks_table td.task_meta a.label,
 div.object_subtasks table.subtasks_table td.task_meta span.label {
   border-radius: 0;
 }
@@ -157,7 +157,7 @@ div.object_subtasks {
 }
 
 div.object_subtasks table.subtasks_table td.task_meta {
-  border-right: 1px solid #eee; 
+  border-right: 1px solid #eee;
 }
 
 div.object_subtasks table.subtasks_table td.task_meta a.label {
@@ -209,7 +209,7 @@ div.object_subtasks table.subtasks_table td.task_meta a.label {
 }
 
 .section_button span img {
-  display: none; 
+  display: none;
 }
 
 /* comments textarea */
@@ -237,7 +237,7 @@ div.object_subtasks table.subtasks_table td.task_meta a.label {
 }
 
 .link_button {
-  background: none;  
+  background: none;
 }
 
 .link_button span.inner {
@@ -262,7 +262,7 @@ div.object_comments .comment .avatar {
 }
 
 ul.attachments_table .filename {
-  font-size: 11px; 
+  font-size: 11px;
 }
 
 /* buttons */
@@ -286,7 +286,7 @@ form div.button_holder {
 }
 
 pre, code {
-  font-family: 'Menlo', monospace; 
+  font-family: 'Menlo', monospace;
 }
 
 .object_wrapper .object_body .object_content_wrapper .object_body_content .syntax_higlighted.source-code {
