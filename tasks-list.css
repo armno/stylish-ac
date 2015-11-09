@@ -34,7 +34,7 @@ div.objects_list_wrapper div.objects_list div.objects_list_body tr td {
 }
 
 div.objects_list_wrapper div.objects_list div.objects_list_body {
-  border-right-color: #eee;
+  border-right-color: #ddd;
 }
 
 span.label_tag span.label_background {
@@ -58,5 +58,39 @@ div.objects_list_wrapper div.objects_list div.objects_list_body div.object_list_
 }
 
 div.objects_list_wrapper div.objects_list div.objects_list_body tr:hover td {
-  border-top: 0;
+  border-top: 0 !important;
+}
+
+div.objects_list_wrapper div.objects_list_head {
+  border-right: 1px solid #ddd;
+  background: #5A635C;
+	padding: 0;
+}
+
+div.objects_list_wrapper div.objects_list_head div.object_list_filter {
+  border-right: 1px solid #808782;
+}
+
+div.objects_list_wrapper div.objects_list_head div.object_list_filter input {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 8px;
+  font-size: 13px;
+  margin-left: 3px;
+  color: #eee;
+}
+
+div.objects_list_wrapper div.objects_list_head div.object_list_filter input:focus {
+	border: 0;
+}
+
+div.objects_list_wrapper div.objects_list_head div.object_list_options li.object_list_option {
+  border-left: 0;
+  border-right: 0;
+}
+
+div.objects_list_wrapper div.objects_list_head div.object_list_options {
+  border-left: 0;
+  border-right: 1px solid #ddd;
 }
