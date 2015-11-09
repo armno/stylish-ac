@@ -1,3 +1,4 @@
+/* task-details.css */
 html,
 body {
 	font: 17px "Roboto", Verdana, Arial, Helvetica, sans-serif
@@ -110,6 +111,7 @@ body {
 
 div.object_comments .comment .comment_content_container {
   border: 0;
+  border-bottom: 1px solid #eee;
   border-radius: 0;
   background: #f2f8f8;
   padding: 20px 10px;
@@ -258,7 +260,7 @@ div.object_comments .comment_form_buttons_wrapper {
 }
 
 div.object_comments .comment .avatar {
-  border-radius: 0;
+  border-radius: 40px;
 }
 
 ul.attachments_table .filename {

@@ -1,0 +1,27 @@
+/* dashboard.css */
+#homescreen_tab div.homescreen_tab_column_wrapper.wide div.homescreen_tab_column {
+  border-radius: 0;
+  box-shadow: none;
+  border-color: #eee;
+  background-color: #f2f8f8;
+}
+
+#homescreen_tab div.homescreen_tab_column_wrapper.narrow .homescreen_widget .head .head_inner,
+#homescreen_tab div.homescreen_tab_column_wrapper.narrow .homescreen_widget .head,
+#homescreen_tab div.homescreen_tab_column_wrapper.narrow .homescreen_widget .body .body_inner,
+#homescreen_tab div.homescreen_tab_column_wrapper.narrow .homescreen_widget .body {
+  background: none;
+}
+
+#homescreen_tab div.homescreen_tab_column .homescreen_widget .body table.common td {
+  padding: 10px;
+}
+
+#wireframe_page_tabs {
+  border-bottom: 0;
+}
+
+div.assignments_list div.assignment_filter_result_group_inner_wrapper {
+  background-color: #f2f8f8;
+  box-shadow: none;
+}

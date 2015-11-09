@@ -1,0 +1,22 @@
+/* breadcrumbs.css */
+ul#breadcrumbs {
+  background: #1D2025;
+}
+
+#wireframe_breadcrumbs ul {
+  padding: 12px;
+  height: 57px;
+  font-size: 13px;
+}
+
+#wireframe_main_container {
+  top: 86px;
+}
+
+#wireframe_breadcrumbs ul li a {
+  color: #b3b3b3;
+}
+
+#wireframe_breadcrumbs ul li span.current {
+  color: #eee;
+}
