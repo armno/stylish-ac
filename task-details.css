@@ -32,7 +32,8 @@ body {
 }
 
 #wireframe_page_title h1 {
-  font-size: 18px;
+  font-size: 22px;
+  color: #333;
 }
 
 #wireframe_content {
@@ -43,8 +44,8 @@ body {
 #wireframe_page_title {
   border: 0;
   background-image: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 13px;
+  padding-bottom: 14px;
 }
 
 .wireframe_content_wrapper {

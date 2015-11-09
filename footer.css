@@ -1,0 +1,14 @@
+/* footer.css */
+#wireframe_menu #menu_item_profile img {
+  border-radius: 32px;
+}
+
+.bottom_options li a.first_level_item {
+  font-size: 12px;
+  position: relative;
+  top: 4px;
+}
+
+#wireframe_statusbar {
+  height: 38px;
+}
