@@ -319,3 +319,200 @@ div.objects_list_wrapper div.objects_list div.objects_list_body div.object_list_
 div.objects_list_wrapper div.objects_list div.objects_list_body tr td {
   padding: 10px 10px !important;
 }
+
+#wireframe_page_title #page_title span.widget span {
+  position: relative;
+  top: -4px;
+}
+
+/* tasks-list.css */
+span.label_tag span.label_overlay {
+  background: none;
+}
+
+div.objects_list_wrapper div.objects_list div.objects_list_body div.object_list_group div.object_list_group_head {
+  background-color: rgba(70, 78, 71, 0.66);
+  text-transform: uppercase;
+  color: #fff;
+}
+
+div.objects_list_wrapper div.objects_list {
+  background: #f2f8f8;
+}
+
+div.objects_list_wrapper div.objects_list div.objects_list_body tr.selected td {
+	background: rgba(70, 78, 71, 0.4) !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  text-shadow: rgba(51, 51, 51, 0.37) 0 1px;
+}
+
+div.objects_list_wrapper div.objects_list div.objects_list_body div.object_list_group div.object_list_group_head span.expanded {
+  background-image: none;
+}
+
+div.objects_list_wrapper div.objects_list div.objects_list_body div.object_list_group div.object_list_group_head {
+  border-bottom: 0;
+}
+
+div.objects_list_wrapper div.objects_list div.objects_list_body tr td {
+  border-top: 0 !important;
+  border-bottom: 1px solid #eee !important;
+}
+
+div.objects_list_wrapper div.objects_list div.objects_list_body {
+  border-right-color: #ddd;
+}
+
+span.label_tag span.label_background {
+  width: 12px;
+  height: 12px;
+  top: 3px;
+}
+
+#tasks tr.objects_list_item span.label_tag {
+  left: -8px !important;
+}
+
+#tasks tr.objects_list_item .task_name_wrapper {
+  padding-left: 16px;
+}
+
+div.objects_list_wrapper div.objects_list div.objects_list_body div.object_list_group div.object_list_group_head span.object_list_group_count {
+  background: none;
+  border: 0;
+  color: rgba(255, 255, 255, 0.32);
+}
+
+div.objects_list_wrapper div.objects_list div.objects_list_body tr:hover td {
+  border-top: 0 !important;
+}
+
+div.objects_list_wrapper div.objects_list_head {
+  border-right: 1px solid #ddd;
+  background: #5A635C;
+	padding: 0;
+}
+
+div.objects_list_wrapper div.objects_list_head div.object_list_filter {
+  border-right: 1px solid #808782;
+}
+
+div.objects_list_wrapper div.objects_list_head div.object_list_filter input {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 8px;
+  font-size: 13px;
+  margin-left: 3px;
+  color: #eee;
+}
+
+div.objects_list_wrapper div.objects_list_head div.object_list_filter input:focus {
+	border: 0;
+}
+
+div.objects_list_wrapper div.objects_list_head div.object_list_options li.object_list_option {
+  border-left: 0;
+  border-right: 0;
+}
+
+div.objects_list_wrapper div.objects_list_head div.object_list_options {
+  border-left: 0;
+  border-right: 1px solid #ddd;
+}
+
+/* breadcrumbs.css */
+ul#breadcrumbs {
+  background: #343943;
+}
+
+#wireframe_breadcrumbs ul {
+  padding: 12px;
+  height: 57px;
+  font-size: 12px;
+}
+
+#wireframe_main_container {
+  top: 90px;
+  bottom: 38px;
+}
+
+#wireframe_breadcrumbs ul li a {
+  color: #b3b3b3;
+  padding-right: 25px;
+  padding-left: 10px;
+}
+
+#wireframe_breadcrumbs ul li span.current {
+  color: #eee;
+  padding-left: 15px;
+}
+
+/* site navigation */
+#wireframe_page_tabs ul#page_tabs {
+  bottom: 0;
+  top: 0;
+}
+
+#wireframe_page_tabs ul#page_tabs li a {
+  font-size: 14px;
+  border-radius: 0;
+  padding: 10px;
+  color: #b3b3b3;
+}
+
+#wireframe_page_tabs ul#page_tabs li a.current {
+  padding: 10px;
+  background: transparent;
+  color: #fff;
+  border: 0;
+}
+
+#wireframe_page_tabs {
+  border-bottom: 0;
+  height: 44px;
+}
+
+#wireframe_breadcrumbs {
+  top: 44px;
+}
+
+/* dashboard.css */
+#homescreen_tab div.homescreen_tab_column_wrapper.wide div.homescreen_tab_column {
+  border-radius: 0;
+  box-shadow: none;
+  border-color: #eee;
+  background-color: #f2f8f8;
+}
+
+#homescreen_tab div.homescreen_tab_column_wrapper.narrow .homescreen_widget .head .head_inner,
+#homescreen_tab div.homescreen_tab_column_wrapper.narrow .homescreen_widget .head,
+#homescreen_tab div.homescreen_tab_column_wrapper.narrow .homescreen_widget .body .body_inner,
+#homescreen_tab div.homescreen_tab_column_wrapper.narrow .homescreen_widget .body {
+  background: none;
+}
+
+#homescreen_tab div.homescreen_tab_column .homescreen_widget .body table.common td {
+  padding: 10px;
+}
+
+div.assignments_list div.assignment_filter_result_group_inner_wrapper {
+  background-color: #f2f8f8;
+  box-shadow: none;
+}
+
+/* footer.css */
+#wireframe_menu #menu_item_profile img {
+  border-radius: 32px;
+}
+
+.bottom_options li a.first_level_item {
+  font-size: 12px;
+  position: relative;
+  top: 4px;
+}
+
+#wireframe_statusbar {
+  height: 38px;
+}
