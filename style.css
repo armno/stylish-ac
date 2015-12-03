@@ -516,3 +516,16 @@ div.assignments_list div.assignment_filter_result_group_inner_wrapper {
 #wireframe_statusbar {
   height: 38px;
 }
+
+/* side navigation */
+#wireframe_menu #menu:not(.popup_open) li.current.has_popup .icon,
+#wireframe_menu li.current:hover .label,
+#wireframe_menu #menu:not(.popup_open) li.current .icon,
+#wireframe_menu #menu li.has_popup .icon {
+  background-image: none;
+}
+
+#wireframe_menu .label {
+  border-radius: 0;
+  font-size: 14px;
+}
