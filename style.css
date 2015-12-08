@@ -198,6 +198,20 @@ div.object_subtasks table.subtasks_table td.task_meta a.label {
   border-radius: 0;
 }
 
+/* task options (overlay) */
+#wireframe_page_title #page_title_actions .title_action .title_actions_dropdown {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  width: 220px;
+}
+
+.menu_dropdown .object_options {
+  font-size: 13px;
+}
+
+.menu_dropdown .object_options li a {
+  padding-left: 26px;
+}
+
 /* comment buttons */
 .section_button {
   background-color: yellowgreen;
