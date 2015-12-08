@@ -607,3 +607,52 @@ span.object_type.inverse {
   font-size: 13px;
   padding: 8px;
 }
+
+/* overlay side menu */
+ul.main_menu_projects_list li a,
+ul.main_menu_projects_tab_list li a {
+  font-size: 14px !important;
+}
+
+ul.main_menu_projects_list li a img,
+ul.main_menu_projects_tab_list li a img {
+  top: 11px;
+}
+
+ul.main_menu_projects_list li a,
+ul.main_menu_projects_tab_list li a {
+  padding:8px 36px;
+  border-radius: 0;
+}
+
+ul.main_menu_projects_list li a {
+  background-position: calc(100% - 10px) center;
+}
+
+#menu .menu_navigation_item.current {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+#menu #menu_popup #menu_popup_header {
+  border-bottom: 0;
+}
+
+#menu #menu_popup {
+  border-left: 0;
+  border-right: 0;
+  box-shadow: 1px 0 3px rgba(0, 0,0, 0.3);
+}
+
+#menu #menu_popup_submenu {
+  box-shadow: 1px 0 3px rgba(0, 0,0, 0.3);
+}
+
+#menu_popup_projects_filter {
+  width: 160px;
+  border-radius: 0;
+}
+
+#menu #menu_popup_submenu #menu_popup_submenu_background,
+#menu #menu_popup_submenu {
+  border-radius: 0;
+}
