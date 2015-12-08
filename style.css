@@ -322,7 +322,7 @@ div.objects_list_wrapper div.objects_list div.objects_list_body tr td {
 
 #wireframe_page_title #page_title span.widget span {
   position: relative;
-  top: -4px;
+  top: -2px;
 }
 
 /* tasks-list.css */
@@ -528,4 +528,82 @@ div.assignments_list div.assignment_filter_result_group_inner_wrapper {
 #wireframe_menu .label {
   border-radius: 0;
   font-size: 14px;
+}
+
+/* project dashboard */
+#project_home .project_home_left_inner {
+  box-shadow: none;
+  border-radius: 0;
+  border-color: #eee;
+  border-left: 0;
+  border-right: 0;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#project_home .project_home_right .project_overview_box_content {
+  background: none;
+}
+
+#project_home .project_home_right_inner {
+  margin-top: 25px;
+}
+
+#project_home .project_home_right .project_overview_box_title,
+#project_home .project_home_right .project_overview_box_title h2 {
+  background: none;
+}
+
+#project_home .project_home_right_inner .object_wrapper .wireframe_content_wrapper {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+#project_home .project_home_right .project_overview_box_title h2,
+#project_home .project_home_right .project_overview_box_content .project_overview_box_content_inner {
+  padding: 20px 30px;
+  background: none;
+}
+
+#project_home .project_home_left .project_overview_box_title h2 {
+  font-size: 14px;
+}
+
+#project_home .project_home_left .project_overview_box {
+  margin-bottom: 30px;
+}
+
+div.activity_log table.common.day_activity_logs th.date,
+div.activity_log table.common.day_activity_logs th,
+table.common th,
+table.common tr th:first-child,
+table.common tr th:last-child {
+  background: none;
+}
+
+div.activity_log table.common.day_activity_logs {
+  margin-bottom: 40px;
+}
+
+div.activity_log table.common.day_activity_logs td {
+  padding: 15px 10px !important;
+}
+
+span.object_type {
+  font-size: 11px;
+  font-weight: normal;
+}
+
+span.object_type.inverse {
+  border-radius: 0;
+}
+
+#project_home #project_details #project_progress {
+  margin-top: 40px;
+}
+
+#late_today td,
+#upcoming td {
+  font-size: 13px;
+  padding: 8px;
 }
