@@ -1,7 +1,7 @@
 /* task-details.css */
 html,
 body {
-	font: 17px "Roboto", Verdana, Arial, Helvetica, sans-serif
+  font: 17px "Roboto", Verdana, Arial, Helvetica, sans-serif
 }
 
 .formatted_content {
@@ -53,11 +53,11 @@ body {
 }
 
 .wireframe_content_wrapper.first {
-	max-width: none;
-	padding-left: 0;
-	padding-right: 0;
-	padding-top: 60px;
-	background-color: #f2f8f8;
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 60px;
+  background-color: #f2f8f8;
 }
 
 .wireframe_content_wrapper.first .head {
@@ -341,7 +341,7 @@ div.objects_list_wrapper div.objects_list {
 }
 
 div.objects_list_wrapper div.objects_list div.objects_list_body tr.selected td {
-	background: rgba(70, 78, 71, 0.4) !important;
+  background: rgba(70, 78, 71, 0.4) !important;
   border-top: 0 !important;
   border-bottom: 0 !important;
   text-shadow: rgba(51, 51, 51, 0.37) 0 1px;
@@ -391,7 +391,7 @@ div.objects_list_wrapper div.objects_list div.objects_list_body tr:hover td {
 div.objects_list_wrapper div.objects_list_head {
   border-right: 1px solid #ddd;
   background: #5A635C;
-	padding: 0;
+  padding: 0;
 }
 
 div.objects_list_wrapper div.objects_list_head div.object_list_filter {
@@ -409,7 +409,7 @@ div.objects_list_wrapper div.objects_list_head div.object_list_filter input {
 }
 
 div.objects_list_wrapper div.objects_list_head div.object_list_filter input:focus {
-	border: 0;
+  border: 0;
 }
 
 div.objects_list_wrapper div.objects_list_head div.object_list_options li.object_list_option {
