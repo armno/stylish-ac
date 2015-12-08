@@ -1,8 +1,12 @@
 # stylish-ac
 
-WIP: Make ActiveCollab prettier.
+WIP: Make ActiveCollab v.3 prettier.
 
-_This project has no design directions. I just put whatever looks good to me at a time._
+### Notes
+
+- _This project is opinionated and has no design directions._
+- Base type is `Roboto` for sans-serif.
+- I use monospaced (`Menlo`) fonts for some input elements. It is just my personal preference. (I know not everyone likes monospaced font).
 
 ### Tested environment
 

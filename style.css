@@ -95,6 +95,10 @@ body {
   color: #fff !important;
 }
 
+#page_action_new_task a:hover {
+  background-color: #7EA827 !important;
+}
+
 #wireframe_page_title #page_title_actions .title_action span.title_action_button {
   padding: 0.25em 1em !important;
 }
@@ -216,6 +220,10 @@ div.object_subtasks table.subtasks_table td.task_meta a.label {
 .section_button {
   background-color: yellowgreen;
   background-image: none;
+}
+
+.section_button:hover {
+  background-color: #7EA827;
 }
 
 .section_button span {
@@ -669,4 +677,127 @@ ul.main_menu_projects_list li a {
 #menu #menu_popup_submenu #menu_popup_submenu_background,
 #menu #menu_popup_submenu {
   border-radius: 0;
+}
+
+/* new task / edit task overlay */
+.flyout_dialog_wrapper {
+  border-radius: 0;
+}
+
+.flyout_dialog_title_wrapper,
+.flyout_dialog_wrapper .button_holder {
+  background-color: #f2f8f8;
+  background-image: none;
+  border-radius: 0;
+}
+
+.flyout_dialog_title_wrapper h2 {
+  font-size: 14px;
+}
+
+.flyout_dialog_content {
+  border-radius: 0;
+}
+
+form div.control_holder label.main_label {
+  font-size: 13px;
+}
+
+form div.control_holder {
+  margin: 8px 0;
+}
+
+form input[type=text],
+form input[type=email],
+form textarea,
+form .a51editor {
+  font-size: 13px;
+}
+
+button, input, textarea, select {
+  font-family: Roboto, Verdana, Arial, sans-serif;
+}
+
+select {
+  font-size: 16px;
+}
+
+div.select_asignees .user_group li.group_user span,
+div.select_subscribers .user_group ul.group_users li label {
+  font-size: 13px;
+}
+
+.group_users li {
+  margin: 5px 0;
+}
+
+div.select_asignees input[type=checkbox] {
+  margin-right: 5px;
+}
+
+select.select_estimate.short {
+  width: 66px !important;
+}
+
+form.big_form div.big_form_wrapper {
+  bottom: 53px;
+}
+
+/* logged hours */
+table.common td {
+  font-size: 14px;
+  padding: 10px;
+}
+
+div.object_time_and_expenses ul.object_tracking_totals li,
+div.object_time_and_expenses ul.object_tracking_totals li span.label,
+div.object_time_and_expenses ul.object_tracking_totals li span.value {
+  border-radius: 0;
+  box-shadow: none;
+  border: 0;
+}
+
+div.object_time_and_expenses ul.object_tracking_totals li span.label,
+div.object_time_and_expenses ul.object_tracking_totals li span.value,
+div.object_time_and_expenses ul.object_tracking_totals li.object_tracking_totals_estimated_time span.value {
+  display: block;
+  float: none;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+}
+
+.object_tracking_totals {
+  margin-top: 30px;
+}
+
+div.object_time_and_expenses ul.object_tracking_totals li.object_tracking_totals_estimated_time span.value,
+div.object_time_and_expenses ul.object_tracking_totals li.object_tracking_totals_tracked_time span.value,
+div.object_time_and_expenses ul.object_tracking_totals li.object_tracking_totals_tracked_expenses span.value {
+  font-size: 17px;
+  color: #454545;
+}
+
+div.object_time_and_expenses div.table_wrapper {
+  padding: 30px;
+}
+
+div.object_time_and_expenses table td.record_date {
+  width: 144px;
+}
+
+button,
+submit {
+  background-image: none;
+  background-color: yellowgreen;
+  color: #fff !important;
+  text-shadow: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+button:hover,
+submit:hover {
+  background-color: #7EA827;
 }
