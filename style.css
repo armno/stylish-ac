@@ -1,7 +1,15 @@
+/* hide these */
+#statusbar_right_options,
+.section_button span img {
+  display: none;
+}
+
 /* task-details.css */
 html,
 body {
-  font: 17px "Roboto", Verdana, Arial, Helvetica, sans-serif
+	font: 17px "Helvetica", Arial, sans-serif;
+  background-image: none;
+  background-color: transparent;
 }
 
 .formatted_content {
@@ -53,11 +61,11 @@ body {
 }
 
 .wireframe_content_wrapper.first {
-  max-width: none;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 60px;
-  background-color: #f2f8f8;
+	max-width: none;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 60px;
+	background-color: #f2f8f8;
 }
 
 .wireframe_content_wrapper.first .head {
@@ -233,9 +241,6 @@ div.object_subtasks table.subtasks_table td.task_meta a.label {
   color: #fff;
 }
 
-.section_button span img {
-  display: none;
-}
 
 /* comments textarea */
 .redactor_box .redactor_editor.redactor_visual_editor_textarea,
@@ -363,7 +368,7 @@ div.objects_list_wrapper div.objects_list {
 }
 
 div.objects_list_wrapper div.objects_list div.objects_list_body tr.selected td {
-  background: rgba(70, 78, 71, 0.4) !important;
+	background: rgba(70, 78, 71, 0.4) !important;
   border-top: 0 !important;
   border-bottom: 0 !important;
   text-shadow: rgba(51, 51, 51, 0.37) 0 1px;
@@ -413,7 +418,7 @@ div.objects_list_wrapper div.objects_list div.objects_list_body tr:hover td {
 div.objects_list_wrapper div.objects_list_head {
   border-right: 1px solid #ddd;
   background: #5A635C;
-  padding: 0;
+	padding: 0;
 }
 
 div.objects_list_wrapper div.objects_list_head div.object_list_filter {
@@ -431,7 +436,7 @@ div.objects_list_wrapper div.objects_list_head div.object_list_filter input {
 }
 
 div.objects_list_wrapper div.objects_list_head div.object_list_filter input:focus {
-  border: 0;
+	border: 0;
 }
 
 div.objects_list_wrapper div.objects_list_head div.object_list_options li.object_list_option {
@@ -446,7 +451,7 @@ div.objects_list_wrapper div.objects_list_head div.object_list_options {
 
 /* breadcrumbs.css */
 ul#breadcrumbs {
-  background: #343943;
+  background: #fff;
 }
 
 #wireframe_breadcrumbs ul {
@@ -481,23 +486,32 @@ ul#breadcrumbs {
   font-size: 14px;
   border-radius: 0;
   padding: 10px;
-  color: #b3b3b3;
+  color: #000;
 }
 
 #wireframe_page_tabs ul#page_tabs li a.current {
   padding: 10px;
   background: transparent;
-  color: #fff;
+  color: #950000;
   border: 0;
 }
 
 #wireframe_page_tabs {
   border-bottom: 0;
   height: 44px;
+  background-color: transparent;
 }
 
 #wireframe_breadcrumbs {
   top: 44px;
+}
+
+#page_tabs_right {
+  display: none;
+}
+
+#wireframe_menu #menu:not(.popup_open) li.current .icon {
+  border: 0;
 }
 
 /* dashboard.css */
@@ -550,6 +564,10 @@ div.assignments_list div.assignment_filter_result_group_inner_wrapper {
 #wireframe_menu .label {
   border-radius: 0;
   font-size: 14px;
+}
+
+#wireframe_menu {
+  background-color: transparent;
 }
 
 /* project dashboard */
@@ -651,6 +669,10 @@ ul.main_menu_projects_list li a {
   background-position: calc(100% - 10px) center;
 }
 
+#menu {
+  background-color: transparent;
+}
+
 #menu .menu_navigation_item.current {
   background-color: rgba(255, 255, 255, 0.9) !important;
 }
@@ -667,6 +689,7 @@ ul.main_menu_projects_list li a {
 
 #menu #menu_popup_submenu {
   box-shadow: 1px 0 3px rgba(0, 0,0, 0.3);
+  width: 240px;
 }
 
 #menu_popup_projects_filter {
@@ -688,7 +711,7 @@ ul.main_menu_projects_list li a {
 .flyout_dialog_wrapper .button_holder {
   background-color: #f2f8f8;
   background-image: none;
-  border-radius: 0;
+	border-radius: 0;
 }
 
 .flyout_dialog_title_wrapper h2 {
@@ -745,7 +768,7 @@ form.big_form div.big_form_wrapper {
 
 /* logged hours */
 table.common td {
-  font-size: 14px;
+	font-size: 14px;
   padding: 10px;
 }
 
@@ -792,7 +815,7 @@ submit {
   background-color: yellowgreen;
   color: #fff !important;
   text-shadow: none;
-  border: 0;
+	border: 0;
   border-radius: 0;
   box-shadow: none;
 }
