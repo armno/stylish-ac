@@ -395,6 +395,7 @@ span.label_tag span.label_background {
   width: 12px;
   height: 12px;
   top: 3px;
+  opacity: 0.6;
 }
 
 #tasks tr.objects_list_item span.label_tag {
@@ -456,7 +457,6 @@ ul#breadcrumbs {
 
 #wireframe_breadcrumbs ul {
   padding: 12px;
-  height: 57px;
   font-size: 12px;
 }
 
@@ -473,16 +473,33 @@ ul#breadcrumbs {
   color: #b3b3b3;
   padding-right: 25px;
   padding-left: 10px;
+  background-image: none;
+  position: relative;
+}
+
+#wireframe_breadcrumbs ul li a:after {
+  display: block;
+  content: '\00bb';
+  position: absolute;
+  top: -1px;
+  right: 4px;
+  color: #ddd;
 }
 
 #wireframe_breadcrumbs ul li span.current {
-  color: #eee;
+  color: #727C8E;
   padding-left: 15px;
 }
 
 /* site navigation */
 #menu_group_main {
-  padding-top: 39px !important;
+  padding-top: 0 !important;
+}
+
+#wireframe_page_tabs {
+  height: 44px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
 }
 
 #wireframe_page_tabs ul#page_tabs {
@@ -507,12 +524,6 @@ ul#breadcrumbs {
   background: transparent;
   color: #202528;
   border: 0;
-}
-
-#wireframe_page_tabs {
-  border-bottom: 0;
-  height: 44px;
-  background-color: transparent;
 }
 
 #wireframe_breadcrumbs {
@@ -602,6 +613,7 @@ div.assignments_list div.assignment_filter_result_group_inner_wrapper {
 
 #wireframe_menu {
   background-color: transparent;
+  top: 44px;
 }
 
 /* project dashboard */
@@ -705,6 +717,7 @@ ul.main_menu_projects_list li a {
 
 #menu {
   background-color: transparent;
+  border-right: 1px solid rgba(0,0,0,0.15);
 }
 
 #menu .menu_navigation_item.current {
