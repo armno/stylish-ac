@@ -1,3 +1,62 @@
+@font-face {
+  font-family: 'ionicon';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/fonts/ionicons.eot');
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/fonts/ionicons.eot') format('eot'), 
+  url('https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/fonts/ionicons.woff') format('woff'), 
+  url('https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/fonts/ionicons.ttf') format('truetype'), 
+  url('https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/fonts/ionicons.svg') format('svg');
+}
+
+#menu_item_homepage .icon:before{
+  content:"\f448";
+}
+
+#menu_item_people .icon:before {
+  content:"\f212";
+}
+
+#menu_item_projects .icon:before {
+  content:"\f382";
+}
+
+#menu_item_calendars .icon:before {
+	content: "\f2d1";
+}
+
+#menu_item_documents .icon:before {
+  content: "\f41c"; 
+}
+
+#menu_item_am_reports .icon:before {
+  content: "\f2a5";
+}
+
+.main_menu_item .icon:before {
+  font-family: 'ionicon';
+  font-size: 26px;
+}
+
+.main_menu_item .icon {
+  padding-top: 10px;
+  padding-bottom: 6px;
+  color: #727C8E;
+}
+
+.main_menu_item.current .icon,
+.main_menu_item:hover .icon {
+  color: #fff;
+}
+
+.main_menu_item a:hover {
+  text-decoration: none;
+  border-bottom: 0;
+}
+.main_menu_item .icon img {
+  display: none;
+}
+
 /* hide these */
 #statusbar_right_options,
 .section_button span img {
@@ -465,9 +524,6 @@ ul#breadcrumbs {
   bottom: 38px;
 }
 
-#wireframe_main_container a {
-  color: rgb(63, 155, 248);
-}
 
 #wireframe_breadcrumbs ul li a {
   color: #b3b3b3;
