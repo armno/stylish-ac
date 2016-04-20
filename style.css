@@ -39,9 +39,12 @@
 }
 
 .main_menu_item .icon {
+  color: #727C8E;
+}
+
+#wireframe_menu #menu:not(.popup_open) li.current .icon {
   padding-top: 10px;
   padding-bottom: 6px;
-  color: #727C8E;
 }
 
 .main_menu_item.current .icon,
@@ -53,8 +56,18 @@
   text-decoration: none;
   border-bottom: 0;
 }
+
 .main_menu_item .icon img {
   display: none;
+}
+
+#page_tab_icon-configure_homescreen img {
+  display: none;
+}
+
+#page_tab_icon-configure_homescreen a:before {
+  content: "\f13d";
+  font-family: ionicon;
 }
 
 /* hide these */
@@ -124,11 +137,11 @@ body {
 	padding-left: 0;
 	padding-right: 0;
 	padding-top: 60px;
-	background-color: #f2f8f8;
+	background-color: #E9EDF2;
 }
 
 .wireframe_content_wrapper.first .head {
-  background-color: #f2f8f8;
+  background-color: #E9EDF2;
   border: 0 !important;
 }
 
@@ -603,6 +616,13 @@ ul#breadcrumbs {
   line-height: 48px !important;
   left: 66px;
   padding-right: 15px;
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+
+#wireframe_menu #menu.show_labels_on_hover li:hover .label {
+  opacity: 1;
 }
 
 #wireframe_menu a .icon,
@@ -619,8 +639,8 @@ ul#breadcrumbs {
 #homescreen_tab div.homescreen_tab_column_wrapper.wide div.homescreen_tab_column {
   border-radius: 0;
   box-shadow: none;
-  border-color: #eee;
-  background-color: #f2f8f8;
+  border-color: rgba(0,0,0,0.15);
+  background-color: #E9EDF2;
 }
 
 #homescreen_tab div.homescreen_tab_column_wrapper.narrow .homescreen_widget .head .head_inner,
@@ -635,7 +655,7 @@ ul#breadcrumbs {
 }
 
 div.assignments_list div.assignment_filter_result_group_inner_wrapper {
-  background-color: #f2f8f8;
+  background-color: #E9EDF2;
   box-shadow: none;
 }
 
@@ -652,6 +672,7 @@ div.assignments_list div.assignment_filter_result_group_inner_wrapper {
 
 #wireframe_statusbar {
   height: 38px;
+  background-color: #fff;
 }
 
 /* side navigation */
@@ -670,6 +691,10 @@ div.assignments_list div.assignment_filter_result_group_inner_wrapper {
 #wireframe_menu {
   background-color: transparent;
   top: 44px;
+}
+
+#wireframe_content a {
+  color: #727C8E;
 }
 
 /* project dashboard */
