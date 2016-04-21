@@ -3,9 +3,9 @@
   font-style: normal;
   font-weight: normal;
   src: url('https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/fonts/ionicons.eot');
-  src: url('https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/fonts/ionicons.eot') format('eot'), 
-  url('https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/fonts/ionicons.woff') format('woff'), 
-  url('https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/fonts/ionicons.ttf') format('truetype'), 
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/fonts/ionicons.eot') format('eot'),
+  url('https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/fonts/ionicons.woff') format('woff'),
+  url('https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/fonts/ionicons.ttf') format('truetype'),
   url('https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/fonts/ionicons.svg') format('svg');
 }
 
@@ -26,7 +26,7 @@
 }
 
 #menu_item_documents .icon:before {
-  content: "\f41c"; 
+  content: "\f41c";
 }
 
 #menu_item_am_reports .icon:before {
@@ -37,6 +37,55 @@
   font-family: 'ionicon';
   font-size: 26px;
 }
+
+
+#statusbar_item_notifications a[style]:before,
+#statusbar_item_status_updates a[style]:before,
+.favorite a:before,
+.log_time_button:before {
+  font-family: 'ionicon';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.1em;
+}
+
+#statusbar_item_notifications a[style]:before {
+  content: "\f399";
+}
+
+#statusbar_item_status_updates a[style]:before {
+  content: "\f2ec";
+}
+
+.favorite a,
+.log_time_button {
+  position: relative;
+}
+
+.log_time_button {
+  font-size: 1em;
+}
+
+.favorite a:before {
+  content: "\f388";
+  top: 19px;
+  left: 18px;
+}
+
+.favorite a:hover:before {
+  color: rgba(255, 0, 0, 0.6);
+}
+
+.log_time_button:before {
+  content: "\f359";
+  font-size: 0.9em;
+}
+
+.log_time_button:hover:before {
+  color: #202528;
+}
+
 
 .main_menu_item .icon {
   color: #727C8E;
@@ -57,14 +106,6 @@
   border-bottom: 0;
 }
 
-.main_menu_item .icon img {
-  display: none;
-}
-
-#page_tab_icon-configure_homescreen img {
-  display: none;
-}
-
 #page_tab_icon-configure_homescreen a:before {
   content: "\f13d";
   font-family: ionicon;
@@ -72,7 +113,12 @@
 
 /* hide these */
 #statusbar_right_options,
-.section_button span img {
+.section_button span img,
+#page_tab_icon-configure_homescreen img,
+.main_menu_item .icon img,
+#statusbar_item_quick-add,
+#statusbar_item_notifications_plus,
+.log_time_button img {
   display: none;
 }
 
@@ -129,7 +175,7 @@ body {
 }
 
 .wireframe_content_wrapper {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e4e4e4;
 }
 
 .wireframe_content_wrapper.first {
@@ -137,11 +183,11 @@ body {
 	padding-left: 0;
 	padding-right: 0;
 	padding-top: 60px;
-	background-color: #E9EDF2;
+	background-color: #faf9f9;
 }
 
 .wireframe_content_wrapper.first .head {
-  background-color: #E9EDF2;
+  background-color: #faf9f9;
   border: 0 !important;
 }
 
@@ -196,9 +242,9 @@ body {
 
 div.object_comments .comment .comment_content_container {
   border: 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e4e4e4;
   border-radius: 0;
-  background: #f2f8f8;
+  background: #faf9f9;
   padding: 20px 10px;
 }
 
@@ -639,8 +685,8 @@ ul#breadcrumbs {
 #homescreen_tab div.homescreen_tab_column_wrapper.wide div.homescreen_tab_column {
   border-radius: 0;
   box-shadow: none;
-  border-color: rgba(0,0,0,0.15);
-  background-color: #E9EDF2;
+  border-color: #e4e4e4;
+  background-color: #faf9f9;
 }
 
 #homescreen_tab div.homescreen_tab_column_wrapper.narrow .homescreen_widget .head .head_inner,
@@ -655,8 +701,33 @@ ul#breadcrumbs {
 }
 
 div.assignments_list div.assignment_filter_result_group_inner_wrapper {
-  background-color: #E9EDF2;
+  background-color: #fafaf9;
   box-shadow: none;
+}
+
+.current_week {
+  margin-top: 20px;
+}
+
+.current_week a {
+  font-size: 1.8em;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.current_week a.sum {
+  margin-left: 0;
+}
+
+.current_week a.log_time_button {
+  margin-top: 0;
+  top: -19px;
+  left: 5px;
+}
+
+#homescreen_tab div.homescreen_tab_column .homescreen_widget .body table.common.day_overview_tracking {
+ 	margin-top: 60px !important;
+  margin-bottom: 60px !important;
 }
 
 /* footer.css */
@@ -668,11 +739,26 @@ div.assignments_list div.assignment_filter_result_group_inner_wrapper {
   font-size: 12px;
   position: relative;
   top: 4px;
+  color: #727C8E;
+}
+
+.bottom_options li a.first_level_item:hover {
+  color: #202528;
 }
 
 #wireframe_statusbar {
   height: 38px;
   background-color: #fff;
+}
+
+#statusbar_item_notifications a[style],
+#statusbar_item_status_updates a[style] {
+  background-image: none !important;
+}
+
+.bottom_options li a.first_level_item {
+  margin-left: 20px;
+  margin-right: 10px;
 }
 
 /* side navigation */
@@ -695,6 +781,12 @@ div.assignments_list div.assignment_filter_result_group_inner_wrapper {
 
 #wireframe_content a {
   color: #727C8E;
+}
+
+#wireframe_menu #menu li.hover .icon {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  border: 0 !important;
 }
 
 /* project dashboard */
@@ -773,6 +865,10 @@ span.object_type.inverse {
 #upcoming td {
   font-size: 13px;
   padding: 8px;
+}
+
+.favorite a img {
+  display: none;
 }
 
 /* overlay side menu */
