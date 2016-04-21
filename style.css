@@ -1061,3 +1061,8 @@ submit:hover {
 #wireframe_menu #menu_item_profile img {
   display: inline !important;
 }
+
+.bottom_options span.badge {
+  color: #FFFFFF;
+  background: #727C8E;
+}
