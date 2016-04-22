@@ -68,7 +68,7 @@
 }
 
 .favorite a:before {
-  content: "\f388";
+  content: "\f388"; /* heart icon */
   top: 13px;
   left: 18px;
 }
@@ -78,7 +78,7 @@
 }
 
 .log_time_button:before {
-  content: "\f359";
+  content: "\f359"; /* plus sign */
   font-size: 0.9em;
 }
 
@@ -107,9 +107,76 @@
 }
 
 #page_tab_icon-configure_homescreen a:before {
-  content: "\f13d";
+  content: "\f13d"; /* gear */
   font-family: ionicon;
 }
+
+.real_task_name:after,
+.indicators .content[check_string=hidden]:after,
+.indicators .content[check_string=is_favorite_false]:after,
+.indicators .content[check_string=is_favorite_true]:after,
+.indicators .content[check_string=is_subscribed_true]:after,
+.content[check_string=not_scheduled] a:after
+div[property_name=due_on] a:after {
+  content: "\f3a9"; /* minus sign */
+  font-family: ionicon;
+  left: 4px;
+  position: relative;
+  top: 1px;
+  color: rgba(255, 0, 0, 0.7);
+  text-shadow: none;
+}
+
+.indicators .content[check_string=is_favorite_false]:after,
+.indicators .content[check_string=is_favorite_true]:after,
+.indicators .content[check_string=is_subscribed_true]:after,
+.content[check_string=not_scheduled] a:after,
+div[property_name=due_on] a:after {
+	content: "\f388"; /* heart icon */
+  left: 1px;
+  color: #727C8E;
+}
+
+.indicators .content[check_string=is_subscribed_true]:after {
+  content: "\f132";
+  font-size: 1.3em;
+  top: -1px;
+  left: 0;
+}
+
+.indicators .content[check_string=is_favorite_true]:after {
+  color: rgba(255, 0, 0, 0.7);
+}
+
+.objects_list_item.selected .real_task_name:after {
+  color: rgba(255, 0, 0, 0.5);
+}
+
+.content[check_string=not_scheduled] a:after {
+  content: "\f3f3"; /* calendar outline */
+}
+
+div[property_name=due_on] a:after {
+	content: "\f2d1"; /* calendar */
+  font-family: ionicon;
+}
+
+.content[check_string=not_scheduled] a:hover:after {
+  color: #b4b5b6;
+}
+
+.real_task_name img,
+.indicators .content[check_string=hidden] img,
+.indicators .content[check_string=is_favorite_false] img,
+.indicators .content[check_string=is_favorite_true] img,
+.indicators .content[check_string=is_subscribed_true] img,
+.content[check_string=not_scheduled] img,
+div[property_name=due_on] a img {
+  display: none;
+}
+
+
+/* ----- end icons ----- */
 
 /* hide these */
 #statusbar_right_options,
@@ -332,6 +399,7 @@ div.object_subtasks table.subtasks_table td.task_meta a.label {
   border-radius: 0;
 }
 
+
 /* task options (overlay) */
 #wireframe_page_title #page_title_actions .title_action .title_actions_dropdown {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
@@ -492,7 +560,7 @@ div.objects_list_wrapper div.objects_list {
 div.objects_list_wrapper div.objects_list div.objects_list_body tr.selected td {
 	background: #B4B5B6 !important;
   border-top: 0 !important;
-  border-bottom: 1px solid !important;
+  border-bottom: 1px solid #b4b5b6 !important;
   text-shadow: rgba(51, 51, 51, 0.37) 0 1px;
 }
 
@@ -566,6 +634,10 @@ div.objects_list_wrapper div.objects_list_head div.object_list_filter input:focu
 div.objects_list_wrapper div.objects_list_head div.object_list_options li.object_list_option {
   border-left: 0;
   border-right: 0;
+}
+
+div.objects_list_wrapper div.objects_list_head div.object_list_options li.object_list_option.object_list_print_option {
+  display: none;
 }
 
 div.objects_list_wrapper div.objects_list_head div.object_list_options {
@@ -786,6 +858,11 @@ div.assignments_list div.assignment_filter_result_group_inner_wrapper {
 
 #wireframe_content a {
   color: #727C8E;
+}
+
+#wireframe_content a.user_link{
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 #wireframe_menu #menu li.hover .icon {
@@ -1065,4 +1142,8 @@ submit:hover {
 .bottom_options span.badge {
   color: #FFFFFF;
   background: #727C8E;
+}
+
+div.object_comments .comment .meta span.date {
+	color: #bfbfbf; 
 }
