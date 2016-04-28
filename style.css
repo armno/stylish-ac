@@ -1066,3 +1066,11 @@ submit:hover {
   color: #FFFFFF;
   background: #727C8E;
 }
+
+/* Side menu */
+#menu #menu_popup #menu_popup_tabs {
+  background: none;
+  position: static;
+  border: 0;
+  border-radius: 0;
+}
