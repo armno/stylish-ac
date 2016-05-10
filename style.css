@@ -192,9 +192,10 @@ div[property_name=due_on] a img {
 /* task-details.css */
 html,
 body {
-	font: 17px "Helvetica", Arial, sans-serif;
+	font-size: 17px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
   background-image: none;
-  background-color: rgb(241, 241, 241);
+/*   background-color: rgb(241, 241, 241); */
 }
 
 .formatted_content {
@@ -280,6 +281,7 @@ body {
   font-size: 14px;
   background-image: none !important;
   color: #454545;
+  text-shadow: #529029 0 1px 0!important;
 }
 
 #page_action_new_task a {
@@ -427,7 +429,7 @@ div.object_subtasks table.subtasks_table td.task_meta a.label {
 .section_button span {
   background: none;
   font-size: 14px;
-  text-shadow: none;
+    text-shadow: #529029 0 1px 0 !important;
   color: #fff;
 }
 
@@ -548,7 +550,7 @@ span.label_tag span.label_overlay {
 }
 
 div.objects_list_wrapper div.objects_list div.objects_list_body div.object_list_group div.object_list_group_head {
-  background-color: #727C8E;
+  background-color: #B4B5B6;
   text-transform: uppercase;
   color: #fff;
 }
@@ -558,7 +560,7 @@ div.objects_list_wrapper div.objects_list {
 }
 
 div.objects_list_wrapper div.objects_list div.objects_list_body tr.selected td {
-	background: #B4B5B6 !important;
+	background: #727C8E !important;
   border-top: 0 !important;
   border-bottom: 1px solid #b4b5b6 !important;
   text-shadow: rgba(51, 51, 51, 0.37) 0 1px;
@@ -643,16 +645,18 @@ div.objects_list_wrapper div.objects_list_head div.object_list_options li.object
 div.objects_list_wrapper div.objects_list_head div.object_list_options {
   border-left: 0;
   border-right: 1px solid #ddd;
+  top: 10px;
 }
 
 /* breadcrumbs.css */
 ul#breadcrumbs {
-  background: #fff;
+  background: #f9f9f9;
 }
 
 #wireframe_breadcrumbs ul {
-  padding: 12px;
+  padding: 11px 12px;
   font-size: 12px;
+  border-bottom: 1px solid #E4E4E4;
 }
 
 #wireframe_main_container {
@@ -691,7 +695,7 @@ ul#breadcrumbs {
 #wireframe_page_tabs {
   height: 44px;
   background-color: transparent;
-  border-bottom: 1px solid rgba(0,0,0,0.15);
+  border-bottom: 0;
 }
 
 #wireframe_page_tabs ul#page_tabs {
@@ -708,13 +712,13 @@ ul#breadcrumbs {
 }
 
 #wireframe_page_tabs ul#page_tabs li a:hover {
-  color: #202528;
+  color: rgba(255, 255, 255, 1);
 }
 
 #wireframe_page_tabs ul#page_tabs li a.current {
   padding: 10px;
   background: transparent;
-  color: #202528;
+  color: rgba(255, 255, 255, 0.9);
   border: 0;
 }
 
@@ -731,7 +735,7 @@ ul#breadcrumbs {
 #wireframe_menu .label,
 #wireframe_menu li.current:hover .label {
   border: 0;
-  background-color: #B4B5B6;
+/*   background-color: #B4B5B6; */
 }
 
 #wireframe_menu .label {
@@ -1015,7 +1019,7 @@ ul.main_menu_projects_list li a {
 
 .flyout_dialog_title_wrapper,
 .flyout_dialog_wrapper .button_holder {
-  background-color: #f2f8f8;
+  background-color: #faf9f9;
   background-image: none;
 	border-radius: 0;
 }
@@ -1154,4 +1158,11 @@ submit:hover {
 
 div.object_comments .comment .meta span.date {
 	color: #bfbfbf;
+}
+
+/* notification popup */
+#context_popup.statusbar_item_notifications_popup #context_popup_container {
+  border: 0;
+  border-radius: 0;
+  background-color: #727C8E;
 }
