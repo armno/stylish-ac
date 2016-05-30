@@ -171,7 +171,8 @@ div[property_name=due_on] a:after {
 .indicators .content[check_string=is_favorite_true] img,
 .indicators .content[check_string=is_subscribed_true] img,
 .content[check_string=not_scheduled] img,
-div[property_name=due_on] a img {
+div[property_name=due_on] a img,
+#context_popup_tip {
   display: none;
 }
 
@@ -1164,5 +1165,49 @@ div.object_comments .comment .meta span.date {
 #context_popup.statusbar_item_notifications_popup #context_popup_container {
   border: 0;
   border-radius: 0;
-  background-color: #727C8E;
+  background-color: #fff;
+}
+
+#context_popup_title,
+#context_popup_close,
+#context_popup.statusbar_item_notifications_popup #navigate_to_all_notifications {
+  background-color: #faf9f9;
+  border-radius: 0;
+  font-size: 13px;
+  border-bottom-color: #dedede;
+}
+
+#context_popup.statusbar_item_notifications_popup #context_popup_container .table_wrapper .table_wrapper_inner #notifications_popup a.notification span.sender_and_message span.sender_name,
+#context_popup.statusbar_item_notifications_popup #context_popup_container .table_wrapper .table_wrapper_inner #notifications_popup a.notification span.sender_and_message span.message {
+  font-size: 13px;
+}
+
+#context_popup.statusbar_item_notifications_popup #context_popup_container .table_wrapper .table_wrapper_inner #notifications_popup a.notification span.sender_and_message {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#context_popup.statusbar_item_notifications_popup #context_popup_container .table_wrapper .table_wrapper_inner #notifications_popup a.notification span.avatar img {
+  border-radius: 50%;
+  border: 0;
+}
+
+#context_popup.statusbar_item_notifications_popup #context_popup_container .table_wrapper .table_wrapper_inner #notifications_popup a.notification span.timestamp {
+  font-size: 13px;
+}
+
+#context_popup.statusbar_item_notifications_popup #context_popup_container .table_wrapper .table_wrapper_inner #notifications_popup a.notification span.read_status span.read_indicator {
+  background-image: none;
+  background-color: #00A651;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin-top: -3px;
+  right: 14px;
+}
+
+#context_popup_title_buttons li a:hover,
+#context_popup.statusbar_item_notifications_popup #context_popup_container .table_wrapper .table_wrapper_inner #notifications_popup a.notification:hover,
+#context_popup_close:hover {
+  background-color: #eaeaea;
 }
