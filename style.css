@@ -1197,7 +1197,7 @@ div.object_comments .comment .meta span.date {
 }
 
 #context_popup.statusbar_item_notifications_popup #context_popup_container .table_wrapper .table_wrapper_inner #notifications_popup a.notification span.read_status span.read_indicator {
-  background-image: none;
+  background-image: none !important;
   background-color: #00A651;
   border-radius: 50%;
   width: 12px;
