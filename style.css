@@ -1211,3 +1211,47 @@ div.object_comments .comment .meta span.date {
 #context_popup_close:hover {
   background-color: #eaeaea;
 }
+
+
+/* MY ASSIGNMENTS page. for MikeyBoy */
+div.filter_criteria div.filter_criteria_head {
+  background: transparent;
+}
+
+#assignment_filters div.filter_results div.assignment_filter_result_group_inner_wrapper {
+  box-shadow: none;
+  background-color: #faf9f9;
+}
+
+#assignment_filters div.filter_results table.common tr.assignment td.labels {
+  border-right-color: #e4e4e4;
+  width: 120px;
+}
+
+#assignment_filters table.common tr td:first-child {
+  padding: 15px 20px;
+}
+
+div.filter_criteria div.filter_criteria_head div.filter_criteria_options {
+  width: auto;
+  margin-top: 8px;
+  margin-right: 15px;
+}
+
+div.filter_criteria div.filter_criteria_head div.filter_criteria_picker {
+  margin-top: 6px;
+}
+
+div.filter_criteria div.filter_criteria_head div.filter_criteria_head_inner {
+  background-image: none;
+}
+
+#assignment_filters div.filter_results div.assignment_filter_result_group_wrapper h2 {
+  color: #798bac;
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+
+#assignment_filters tbody {
+  border-top: 1px solid #e4e4e4;
+}
