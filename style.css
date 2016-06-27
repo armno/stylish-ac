@@ -132,15 +132,17 @@ div[property_name=due_on] a:after {
 .indicators .content[check_string=is_subscribed_true]:after,
 .content[check_string=not_scheduled] a:after,
 div[property_name=due_on] a:after {
-	content: "\f388"; /* heart icon */
+	content: "\f442"; /* heart icon */
   left: 1px;
   color: #727C8E;
+  font-family: ionicon;
+  font-size: 1.3em;
 }
 
 .indicators .content[check_string=is_subscribed_true]:after {
-  content: "\f132";
-  font-size: 1.3em;
-  top: -1px;
+  content: "\f422";
+  font-size: 1.5em;
+  top: -5px;
   left: 0;
 }
 
@@ -1233,11 +1235,6 @@ div.my_tasks_wrapper div.my_tasks div.my_tasks_inner_wrapper table tbody tr td.l
   width: 120px;
 }
 
-#assignment_filters table.common tr td:first-child,
-div.my_tasks_wrapper div.my_tasks table.common tr td:first-child {
-  padding: 15px 20px;
-}
-
 div.filter_criteria div.filter_criteria_head div.filter_criteria_options {
   width: auto;
   margin-top: 8px;
@@ -1246,10 +1243,27 @@ div.filter_criteria div.filter_criteria_head div.filter_criteria_options {
 
 div.filter_criteria div.filter_criteria_head div.filter_criteria_picker {
   margin-top: 6px;
+  margin-left: 20px;
 }
 
 div.filter_criteria div.filter_criteria_head div.filter_criteria_head_inner {
   background-image: none;
+  position: relative;
+  min-height: 33px;
+}
+
+div.filter_criteria div.filter_criteria_head div.filter_criteria_head_inner:before {
+  position: absolute;
+  display: block;
+  content: "\f125";
+  font-family: 'ionicon';
+  font-size: 16px;
+  top: 8px;
+}
+
+div.filter_criteria .expanded div.filter_criteria_head div.filter_criteria_head_inner:before {
+  content: "\f123";
+  left: 13px;
 }
 
 #assignment_filters div.filter_results div.assignment_filter_result_group_wrapper h2 {
@@ -1265,4 +1279,13 @@ div.filter_criteria div.filter_criteria_head div.filter_criteria_head_inner {
 div.my_tasks_wrapper div.my_late_tasks div.my_late_tasks_inner_wrapper ul li {
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+div.filter_criteria div.filter_criteria_body {
+  background-color: #faf9f9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  margin-top: 20px;
 }
