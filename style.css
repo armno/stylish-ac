@@ -132,18 +132,19 @@ div[property_name=due_on] a:after {
 .indicators .content[check_string=is_subscribed_true]:after,
 .content[check_string=not_scheduled] a:after,
 div[property_name=due_on] a:after {
-	content: "\f442"; /* heart icon */
+	content: "\f388"; /* heart icon */
   left: 1px;
   color: #727C8E;
   font-family: ionicon;
-  font-size: 1.3em;
+  font-size: 1.25em;
 }
 
 .indicators .content[check_string=is_subscribed_true]:after {
   content: "\f422";
   font-size: 1.5em;
-  top: -5px;
+  top: -1px;
   left: 0;
+  font-family: ionicon;
 }
 
 .indicators .content[check_string=is_favorite_true]:after {
@@ -310,9 +311,12 @@ body {
   font-size: 11px;
   font-weight: normal;
   padding: 3px 8px;
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
+.pill.label {
+  opacity: 0.6;
+}
 
 div.object_comments .comment .comment_content_container {
   border: 0;
@@ -1212,7 +1216,6 @@ div.object_comments .comment .meta span.date {
   background-color: #eaeaea;
 }
 
-
 /* MY ASSIGNMENTS page. for MikeyBoy */
 div.filter_criteria div.filter_criteria_head {
   background: transparent;
@@ -1288,4 +1291,31 @@ div.filter_criteria div.filter_criteria_body {
   border-top: 1px solid #e4e4e4;
   border-bottom: 1px solid #e4e4e4;
   margin-top: 20px;
+}
+
+/* reminder */
+.user_reminders li.reminder {
+  background: #fff7d8;
+  border: 1px solid #ecd36f;
+  box-shadow: none;
+  padding: 10px;
+}
+
+.user_reminders li.reminder a.reminder_dismiss {
+  background: none;
+  display: block;
+}
+
+.user_reminders li.reminder a.reminder_dismiss:before {
+	content:"\f12a";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 16px;
+  color: #cece9e;
+  font-family: ionicon;
+}
+
+.user_reminders li.reminder a.reminder_dismiss img {
+  display: none;
 }
