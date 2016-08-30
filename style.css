@@ -168,7 +168,6 @@ div[property_name=due_on] a:after {
   color: #b4b5b6;
 }
 
-.real_task_name img,
 .indicators .content[check_string=hidden] img,
 .indicators .content[check_string=is_favorite_false] img,
 .indicators .content[check_string=is_favorite_true] img,
